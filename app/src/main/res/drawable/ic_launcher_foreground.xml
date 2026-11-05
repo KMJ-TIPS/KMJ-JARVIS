@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder mark: two rings. Real artwork comes with the rename. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:strokeColor="#FF38D6F5"
+        android:strokeWidth="4"
+        android:pathData="M54,30a24,24 0 1,0 0.01,0z" />
+    <path
+        android:fillColor="#FF38D6F5"
+        android:pathData="M54,44a10,10 0 1,0 0.01,0z" />
+</vector>
