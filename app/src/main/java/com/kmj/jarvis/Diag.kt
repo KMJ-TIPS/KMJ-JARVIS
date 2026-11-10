@@ -3,7 +3,7 @@ package com.kmj.jarvis
 import android.util.Log
 
 /**
- * Diagnostic log, read with `adb logcat -s Shilex` and kept in [DiagFile]. States and
+ * Diagnostic log, read with `adb logcat -s KMJJarvis` and kept in [DiagFile]. States and
  * timings only: never what was said, screen text or keys.
  */
 object Diag {

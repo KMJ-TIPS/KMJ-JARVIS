@@ -11,7 +11,7 @@ typedef struct {
 } Aec;
 
 JNIEXPORT jlong JNICALL
-Java_app_shilex_android_audio_EchoCanceller_nativeCreate(JNIEnv *env, jclass cls, jint frame, jint tail, jint rate) {
+Java_com_kmj_jarvis_audio_EchoCanceller_nativeCreate(JNIEnv *env, jclass cls, jint frame, jint tail, jint rate) {
     Aec *aec = calloc(1, sizeof(Aec));
     if (!aec) return 0;
     aec->frame = frame;
@@ -28,7 +28,7 @@ Java_app_shilex_android_audio_EchoCanceller_nativeCreate(JNIEnv *env, jclass cls
 // canceller's output (a voice over the reply survives it); suppressed has the leftover echo
 // and noise removed too, which also mutes a voice that overlaps the reply.
 JNIEXPORT void JNICALL
-Java_app_shilex_android_audio_EchoCanceller_nativeProcess(JNIEnv *env, jclass cls, jlong handle, jshortArray mic, jshortArray ref, jshortArray out, jshortArray suppressed) {
+Java_com_kmj_jarvis_audio_EchoCanceller_nativeProcess(JNIEnv *env, jclass cls, jlong handle, jshortArray mic, jshortArray ref, jshortArray out, jshortArray suppressed) {
     Aec *aec = (Aec *) (intptr_t) handle;
     if (!aec) return;
     jsize n = (*env)->GetArrayLength(env, mic);
@@ -48,13 +48,13 @@ Java_app_shilex_android_audio_EchoCanceller_nativeProcess(JNIEnv *env, jclass cl
 }
 
 JNIEXPORT void JNICALL
-Java_app_shilex_android_audio_EchoCanceller_nativeReset(JNIEnv *env, jclass cls, jlong handle) {
+Java_com_kmj_jarvis_audio_EchoCanceller_nativeReset(JNIEnv *env, jclass cls, jlong handle) {
     Aec *aec = (Aec *) (intptr_t) handle;
     if (aec) speex_echo_state_reset(aec->echo);
 }
 
 JNIEXPORT void JNICALL
-Java_app_shilex_android_audio_EchoCanceller_nativeDestroy(JNIEnv *env, jclass cls, jlong handle) {
+Java_com_kmj_jarvis_audio_EchoCanceller_nativeDestroy(JNIEnv *env, jclass cls, jlong handle) {
     Aec *aec = (Aec *) (intptr_t) handle;
     if (!aec) return;
     speex_preprocess_state_destroy(aec->pre);

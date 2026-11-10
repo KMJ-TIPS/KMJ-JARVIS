@@ -11,4 +11,4 @@
 -keep class ai.onnxruntime.** { *; }
 
 # Our SpeexDSP echo canceller: the JNI functions are named after this class and its methods.
--keep class app.shilex.android.audio.EchoCanceller { *; }
+-keep class com.kmj.jarvis.audio.EchoCanceller { *; }

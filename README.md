@@ -72,7 +72,7 @@ on-device commands, and a custom purple-gold UI with a living 3D avatar.**
 | **[KMJ-JARVIS-1.2.0-release.apk](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.0-release.apk)** | ~90 MB | Smaller, R8-optimised (no wake-word models) |
 
 ### Step 2 — Install
-1. **Uninstall any older KMJ JARVIS / Shilex build first** (updates need the same signature)
+1. **Uninstall any older KMJ JARVIS build first** (updates need the same signature)
 2. Open the APK → allow *"Install unknown apps"* if asked
 3. Watch the **splash** ✨ → grant permissions with **"Allow all"**
 4. Paste your free **Gemini API key** → **Start** 🎉
@@ -110,7 +110,7 @@ echo "sdk.dir=/path/to/android-sdk" > local.properties
 ./gradlew :app:assembleDebug          # → app-debug.apk (wake word included)
 ```
 
-**Signed release:** the release build reads `SHILEX_KEYSTORE` + `SHILEX_KEYSTORE_PASSWORD`
+**Signed release:** the release build reads `KMJ_KEYSTORE` + `KMJ_KEYSTORE_PASSWORD`
 environment variables (your own keystore, alias `jarvis`).
 
 **Requirements:** Android Studio / SDK 35 · NDK 27.0.12077973 · CMake 3.22.1 · JDK 17+
@@ -172,12 +172,13 @@ flowchart LR
 
 ## 📄 License & Credits
 
-This project is a fork of the amazing open-source **Shilex** voice assistant
-([app.shilex.android](https://github.com/h4harshill/jarvis-android)) — huge thanks to the
-original author. All credit for the core assistant architecture goes upstream; the KMJ
-rebrand, avatar, UI, and branding are new work.
+KMJ JARVIS is an independent KMJ rebrand and feature fork of the open-source
+[Shilex voice assistant](https://github.com/h4harshill/jarvis-android) (GPL-3.0).
+Upstream copyright and license notices are preserved in [`LICENSE`](LICENSE) and
+[`NOTICE`](NOTICE), as the GNU GPL v3 requires. The rebrand, avatar, UI, and
+branding are new work.
 
-Licensed under **[GNU GPL v3](LICENSE)** — see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE).
+Licensed under **[GNU GPL v3](LICENSE)**.
 
 ---
 

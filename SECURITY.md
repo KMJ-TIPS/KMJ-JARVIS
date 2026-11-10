@@ -1,8 +1,9 @@
 # Security
 
 Found a way to make JARVIS act without the user's OK, read something it shouldn't, or leak
-data? Please report it privately to **contact@h4harshill.com** (not a public issue), with the
-steps to reproduce and the app version. You'll get an answer as soon as possible.
+data? Please report it privately via **GitHub -> Security -> Report a vulnerability** on this
+repository (not as a public issue), with the steps to reproduce and the app version. You'll
+get an answer as soon as possible.
 
 Things that are in scope include: getting around the Allow card, the "Your turn" handover,
 the blocked-apps list, the untrusted-text guard (text on screen, in messages, emails or

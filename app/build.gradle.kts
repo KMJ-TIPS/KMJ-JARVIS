@@ -23,14 +23,14 @@ android {
     // The release key never enters the repo: scripts/android_release.py passes its path and
     // password (from the macOS Keychain) as environment variables. Without them the release
     // build is unsigned. Android installs an update only if it is signed with this same key.
-    val releaseKeystore = System.getenv("SHILEX_KEYSTORE")
+    val releaseKeystore = System.getenv("KMJ_KEYSTORE")
     signingConfigs {
         if (releaseKeystore != null) {
             create("release") {
                 storeFile = file(releaseKeystore)
-                storePassword = System.getenv("SHILEX_KEYSTORE_PASSWORD")
+                storePassword = System.getenv("KMJ_KEYSTORE_PASSWORD")
                 keyAlias = "jarvis"
-                keyPassword = System.getenv("SHILEX_KEYSTORE_PASSWORD")
+                keyPassword = System.getenv("KMJ_KEYSTORE_PASSWORD")
             }
         }
     }
