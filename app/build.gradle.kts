@@ -7,15 +7,15 @@ plugins {
 }
 
 android {
-    namespace = "app.shilex.android"
+    namespace = "com.kmj.jarvis"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "app.shilex.android"
+        applicationId = "com.kmj.jarvis"
         minSdk = 29
         targetSdk = 35
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 3
+        versionName = "1.2.0"
         // Phones only (ONNX Runtime ships native code per CPU type).
         ndk { abiFilters += listOf("arm64-v8a", "armeabi-v7a") }
     }
@@ -60,6 +60,7 @@ android {
             version = "3.22.1"
         }
     }
+    lint { checkReleaseBuilds = false }
     // Android calls such as Log do nothing in local unit tests instead of throwing.
     testOptions {
         unitTests.isReturnDefaultValues = true

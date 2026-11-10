@@ -47,7 +47,7 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Shilex">
+        android:theme="@style/Theme.KMJJarvis">
         <activity
             android:name=".MainActivity"
             android:exported="true"

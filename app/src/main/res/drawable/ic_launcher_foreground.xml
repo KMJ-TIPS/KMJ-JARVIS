@@ -1,15 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Placeholder mark: two rings. Real artwork comes with the rename. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+    <group
+        android:translateX="10.2"
+        android:translateY="10.2"
+        android:scaleX="0.365"
+        android:scaleY="0.365">
+    <!-- Deep violet radial badge -->
+    <path android:pathData="M120,8 A112,112 0 1,1 119.9,8 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="120"
+                android:centerY="100"
+                android:gradientRadius="130">
+                <item android:offset="0.0" android:color="#FF38266B" />
+                <item android:offset="0.6" android:color="#FF221647" />
+                <item android:offset="1.0" android:color="#FF150E2E" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- Faint rim -->
     <path
-        android:strokeColor="#FF38D6F5"
-        android:strokeWidth="4"
-        android:pathData="M54,30a24,24 0 1,0 0.01,0z" />
+        android:pathData="M120,8 A112,112 0 1,1 119.9,8 Z"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="2" />
+    <!-- Sheen, top left -->
+    <path android:pathData="M60,42 A100,100 0 0,1 150,20 A120,120 0 0,0 40,120 A110,70 0 0,1 60,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="40"
+                android:startY="20"
+                android:endX="150"
+                android:endY="120">
+                <item android:offset="0.0" android:color="#2EFFFFFF" />
+                <item android:offset="1.0" android:color="#00FFFFFF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Orbit ring, back (top) half — behind the K -->
+    <group
+        android:pivotX="120"
+        android:pivotY="120"
+        android:rotation="-22">
+        <path
+            android:pathData="M34,120 A86,50 0 0,1 206,120"
+            android:strokeWidth="5"
+            android:strokeLineCap="round">
+            <aapt:attr name="android:strokeColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="34"
+                    android:startY="120"
+                    android:endX="206"
+                    android:endY="120">
+                    <item android:offset="0.0" android:color="#FFC9892F" />
+                    <item android:offset="0.5" android:color="#FFE8B45A" />
+                    <item android:offset="1.0" android:color="#FFFFD98A" />
+                </gradient>
+            </aapt:attr>
+        </path>
+    </group>
+
+    <!-- Bold gold K -->
     <path
-        android:fillColor="#FF38D6F5"
-        android:pathData="M54,44a10,10 0 1,0 0.01,0z" />
+        android:pathData="M100,78 L100,162"
+        android:strokeWidth="22"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="100"
+                android:startY="78"
+                android:endX="158"
+                android:endY="164">
+                <item android:offset="0.0" android:color="#FFFFE7B0" />
+                <item android:offset="0.5" android:color="#FFFFC24B" />
+                <item android:offset="1.0" android:color="#FFE0912A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M156,80 L106,122"
+        android:strokeWidth="22"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="156"
+                android:startY="80"
+                android:endX="106"
+                android:endY="122">
+                <item android:offset="0.0" android:color="#FFFFE7B0" />
+                <item android:offset="1.0" android:color="#FFFFC24B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M106,122 L158,164"
+        android:strokeWidth="22"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="106"
+                android:startY="122"
+                android:endX="158"
+                android:endY="164">
+                <item android:offset="0.0" android:color="#FFFFC24B" />
+                <item android:offset="1.0" android:color="#FFE0912A" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Orbit ring, front (bottom) half — over the K -->
+    <group
+        android:pivotX="120"
+        android:pivotY="120"
+        android:rotation="-22">
+        <path
+            android:pathData="M34,120 A86,50 0 0,0 206,120"
+            android:strokeWidth="5.5"
+            android:strokeLineCap="round"
+            android:strokeColor="#FFFFD98A" />
+    </group>
+
+    <!-- Satellites -->
+    <path android:pathData="M196,120 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="192"
+                android:centerY="116"
+                android:gradientRadius="12">
+                <item android:offset="0.0" android:color="#FFFFE7B0" />
+                <item android:offset="1.0" android:color="#FFC9892F" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:pathData="M44,120 m-7,0 a7,7 0 1,0 14,0 a7,7 0 1,0 -14,0" android:fillColor="#FFB79CFF" />
+    <path android:pathData="M196,120 m-14,0 a14,14 0 1,0 28,0 a14,14 0 1,0 -28,0" android:fillColor="#26FFC24B" />
+    <path android:pathData="M44,120 m-11,0 a11,11 0 1,0 22,0 a11,11 0 1,0 -22,0" android:fillColor="#26B79CFF" />
+
+    <!-- Sparkles -->
+    <path
+        android:pathData="M72,64 L74.6,71.4 L82,74 L74.6,76.6 L72,84 L69.4,76.6 L62,74 L69.4,71.4 Z"
+        android:fillColor="#CCFFFFFF" />
+    <path
+        android:pathData="M176,172 L177.8,177.2 L183,179 L177.8,180.8 L176,186 L174.2,180.8 L169,179 L174.2,177.2 Z"
+        android:fillColor="#99FFFFFF" />
+    </group>
 </vector>
