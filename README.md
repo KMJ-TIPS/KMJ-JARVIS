@@ -21,6 +21,8 @@ on-device commands, and a custom purple-gold UI with a living 3D avatar.**
 
 [![All Releases](https://img.shields.io/badge/📦_View_All_Releases-FFC24B?style=flat-square&logo=github)](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases)
 
+[![Download Page](https://img.shields.io/badge/🌐_Official_Download_Page-Overview_•_Screenshots_•_FAQ-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kmj-tips.github.io/KMJ-JARVIS-DOWNLOADER/)
+
 </div>
 
 ---
