@@ -9,15 +9,15 @@
 **A full voice assistant for Android — Gemini Live conversations, offline wake word,
 on-device commands, and a custom purple-gold UI with a living 3D avatar.**
 
-![Release](https://img.shields.io/badge/Release-v1.2.0-FFC24B?style=for-the-badge&logo=github&logoColor=white)
+![Release](https://img.shields.io/badge/Release-v1.2.1-FFC24B?style=for-the-badge&logo=github&logoColor=white)
 ![Platform](https://img.shields.io/badge/Android-10%2B-8B5CF6?style=for-the-badge&logo=android&logoColor=white)
 ![API](https://img.shields.io/badge/API-29%20%7C%2015-6D28D9?style=for-the-badge&logo=google&logoColor=white)
 ![License](https://img.shields.io/badge/License-GPL--3.0-FFC24B?style=for-the-badge&logo=gnu&logoColor=white)
 
 **⬇️ DOWNLOAD NOW — FREE & OPEN SOURCE ⬇️**
 
-[![Download Debug APK](https://img.shields.io/badge/⬇️_Download_Full_APK_(Recommended)-118_MB-8B5CF6?style=for-the-badge&logo=android&logoColor=white)](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.0-debug-full.apk)
-[![Download Release APK](https://img.shields.io/badge/⬇️_Download_Release_APK-90_MB-6D28D9?style=for-the-badge&logo=android&logoColor=white)](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.0-release.apk)
+[![Download Debug APK](https://img.shields.io/badge/⬇️_Download_Full_APK_(Recommended)-113_MB-8B5CF6?style=for-the-badge&logo=android&logoColor=white)](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.1-debug-full.apk)
+[![Download Release APK](https://img.shields.io/badge/⬇️_Download_Release_APK-86_MB-6D28D9?style=for-the-badge&logo=android&logoColor=white)](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.1-release.apk)
 
 [![All Releases](https://img.shields.io/badge/📦_View_All_Releases-FFC24B?style=flat-square&logo=github)](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases)
 
@@ -68,8 +68,8 @@ on-device commands, and a custom purple-gold UI with a living 3D avatar.**
 ### Step 1 — Download the APK
 | Build | Size | Best For |
 |---|---|---|
-| **[KMJ-JARVIS-1.2.0-debug-full.apk](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.0-debug-full.apk)** ⭐ | ~118 MB | **Recommended** — wake word + all features |
-| **[KMJ-JARVIS-1.2.0-release.apk](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.0-release.apk)** | ~90 MB | Smaller, R8-optimised (no wake-word models) |
+| **[KMJ-JARVIS-1.2.1-debug-full.apk](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.1-debug-full.apk)** ⭐ | ~113 MB | **Recommended** — wake word + all features |
+| **[KMJ-JARVIS-1.2.1-release.apk](https://github.com/KMJ-TIPS/KMJ-JARVIS/releases/latest/download/KMJ-JARVIS-1.2.1-release.apk)** | ~86 MB | Smaller, R8-optimised (no wake-word models) |
 
 ### Step 2 — Install
 1. **Uninstall any older KMJ JARVIS build first** (updates need the same signature)
@@ -166,6 +166,7 @@ flowchart LR
 - [x] v1.0.0 — Full rebrand, purple-gold theme, new icons
 - [x] v1.1.0 — Slide-to-Talk + living 3D avatar
 - [x] v1.2.0 — Splash screen, left drawer, one-page permissions, pro logo
+- [x] v1.2.1 — Echo cancellation fixed (native AEC now loads and links)
 - [ ] v1.3.0 — Hindi wake word, more automations
 
 ---
@@ -190,6 +191,6 @@ Licensed under **[GNU GPL v3](LICENSE)**.
 ![Repo Forks](https://img.shields.io/github/forks/KMJ-TIPS/KMJ-JARVIS?style=social)
 ![Follow](https://img.shields.io/github/followers/KMJ-TIPS?style=social)
 
-<sub>Made with 💜 and a little gold · **KMJ JARVIS** v1.2.0 · *Your phone. Your AI. One voice.*</sub>
+<sub>Made with 💜 and a little gold · **KMJ JARVIS** v1.2.1 · *Your phone. Your AI. One voice.*</sub>
 
 </div>
